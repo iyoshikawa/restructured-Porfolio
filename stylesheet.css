@@ -1,0 +1,340 @@
+/*--NOTE-- All border properties if the same color as the background are for sizing and movement purposes not to be used as redundant css, but a means to visually see movement of items or groups of containers*/
+
+/*Global Styling*/
+header {
+    background: #4D5057;
+    color: #fff;
+    padding: 0 10px;
+    min-height: 70px;
+}
+
+body {
+    word-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:100px;
+    width:100%;
+    display:none;
+}
+
+.backTop a{
+    border: 2px solid #cfcfcf;
+    background-color: #cfcfcf;
+    float: right;
+    margin-right: 25px;
+    color: #1C9C3C;
+    padding: 7px;
+    border-radius: 20px;
+    opacity: .7;
+
+    /*required for the script to display and hide the footer*/
+    transition: bottom .2s ease-in-out;
+}
+
+/*nav bar*/
+
+#branding {
+    float: left;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.name{
+    font-family: 'Open sans', sans-serif;
+    font-size: 25px;
+}
+
+.nav2 {
+    float: right;
+}
+
+header ul {
+    font-size: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4D5057;
+}
+
+header li {
+    padding-top: 15px;
+    float: left;
+}
+
+header li a {
+    font-size: 25px;
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+li a:active{
+    background-color: #ffffff;
+}
+
+
+/*parallax styling*/
+.parallax{
+    /*source of img */
+    background-image: url(img/pexels-photo-flying.jpeg);
+
+    /*height of img*/
+    width: auto;
+    min-height: 800px;
+
+    /*location of img*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Heroshot with quote*/
+.heroShot{
+    background-image: url(img/bend_climbing.jpg);
+
+    width: auto;
+    min-height: 900px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.80;
+}
+
+.aboutMe{
+    background-color: #0E7C2B;
+    border: 1px solid #0E7C2B;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-size: 45px;
+    color: white;
+    width: 50%;
+}
+
+/*List of skills - FlexBox tic-tac-toe idea*/
+.skillsContainer{
+    list-style-type: none;
+
+    /*standard flexbox styling*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    
+    margin: 50px 0;
+}
+
+.item{
+    padding: 100px;
+    text-align: center;
+    /*border: 2px solid #000000;*/
+}
+
+.fab{
+    font: 0.5em;
+}
+
+.fa-html5{
+    color: #ffa500;
+}
+
+.fa-css3-alt{
+    color: #1717FF;
+}
+
+.fa-js-square{
+    color: #F4CD07;
+}
+
+.fa-python{
+    color: #3A7D44;
+}
+
+
+
+/*Experience Area*/
+h1.experiences{
+    text-align: center;   
+}
+
+.experienceInformation{
+    font: 15px;
+}
+
+/*timeline styling*/
+*{
+    box-sizing: border-box;
+}
+
+  /* Set a background color */
+.experiencesBody{
+    background-image: url(img/pexels-photo-574070.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Helvetica, sans-serif;
+    padding: 25px 0;
+}
+
+  /* The actual timeline (the vertical ruler) */
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  /* The actual timeline (the vertical ruler) */
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 95px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+  /* Container around content */
+.containers{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+  /* The circles on the timeline */
+.containers::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -11px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+  /* Place the container to the left */
+.left{
+    left: 0;
+}
+
+  /* Place the container to the right */
+.right{
+    left: 50%;
+}
+
+  /* Add arrows to the left container (pointing right) */
+.left::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+  /* Add arrows to the right container (pointing left) */
+.right::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+  /* Fix the circle for containers on the right side */
+.right::after{
+    left: -11px;
+}
+
+  /* The actual content */
+.content{
+    color: #f1f1f1;
+    padding: 20px 30px;
+    position: relative;
+    border: 2px solid #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+}
+
+/* Experiences box */ 
+.experiences{
+    margin: 40px;
+    color: #f1f1f1;
+    padding: 20px 30px;
+    position: relative;
+    border: 2px solid #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;  
+}
+
+
+/*contact me*/
+#contact{
+    font-family: 'Open sans', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contactMe{
+    color: #000000;
+    text-align: center; 
+}
+
+
+.btn{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+a:link{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.email:hover{
+    background-color: #4CAF50;
+    color: white;
+}
