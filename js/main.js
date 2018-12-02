@@ -1,10 +1,10 @@
 // when scroll is less that 200px footer will appear
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() < 200) {
         $("footer").slideUp();
-    }
-    else {
+    } else {
         $("footer").slideDown();
     }
 });
 
+// tooltip from jquery

@@ -1,2 +1,3 @@
 # Personal-Portfolio
-website that showcases me
+
+Profile page that is static but with parallax
