@@ -80,12 +80,14 @@ header li a {
 
 li a:hover {
   color: #000000;
-  background-color: #ffffff;
+  float: right;
 }
 
 li a:active {
   background-color: #ffffff;
 }
+
+
 
 /*parallax styling*/
 .parallax {
@@ -312,13 +314,13 @@ h1.experiences {
 }
 
 .btn {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   background-color: #ffffff;
   color: #000000;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
-  position: relative;
+  position: relative;  
 }
 
 a:link {
