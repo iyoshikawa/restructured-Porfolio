@@ -132,6 +132,10 @@ li a:active {
 }
 
 /*List of skills - FlexBox tic-tac-toe idea*/
+.skillsHeading{
+  text-align: center;
+}
+
 .skillsContainer {
   list-style-type: none;
 
@@ -143,7 +147,7 @@ li a:active {
   align-items: center;
   align-content: center;
 
-  margin: 50px 0;
+  margin: 5px 0 50px 0;
 }
 
 .item {
